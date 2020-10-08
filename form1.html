@@ -1,0 +1,146 @@
+<html>
+<head>
+    <title>Travel Website</title>
+    <link rel="stylesheet"href="style1.css">
+    <link rel="stylesheet"href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta name="viewport"content="width=device-width,initial-scale=1.0">
+    <link rel="stylesheet"href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+</head>
+<body>
+<section class="header">
+   
+    <div class="card-heading">
+        <h2 class="title"> Registration Form</h2>
+        </div> 
+        <br>  
+        <div class="row">
+            <div class="col-sm-4">
+        <div class="feature-img">
+            <img src="Tour/sharedpro.jpg">    
+            </div>
+        </div>
+        <div class="col-sm-4">
+    <form name="RegForm" action="/submit.php" onsubmit="return register()" method="post">  
+        <div class="row">
+            <div class="col-sm-4">
+               First Name:
+            </div>
+             <div class="col-sm-6">
+               <input type="text" size=30 name="first_name">    
+            </div>
+            <br><br>
+            <hr>
+                 
+            <div class="col-sm-4">
+               Last Name:
+            </div>
+             <div class="col-sm-6">
+               <input type="text" size=30 name="last_name">
+            </div>
+            <br><br>
+            <hr>
+
+            <div class="col-sm-4">
+               Email:
+            </div>
+             <div class="col-sm-6">
+               <input type="text" size=30 name="email" placeholder="example@gmail.com" required>
+            </div>
+            <br><br>
+            <hr>
+            <div class="col-sm-4">
+               Phone:
+            </div>    
+            <div class="col-sm-6">
+				<input type="text" size=30 name="phone" placeholder="123-4567-8901" required>
+             </div>
+             <br><br>
+			 <hr>
+			 <div class="col-sm-4">
+				DOB:
+			 </div>
+			  <div class="col-sm-6">
+				<input type="date" pattern="\d{2, 1}/\d{2, 1}/\d{4}">
+             </div>
+             <br><br>
+			 <hr>
+			 <div class="col-sm-4">
+				Password:
+			 </div>
+			  <div class="col-sm-6">
+				<input type="password" size=30 value="" id="myInput">
+			 </div>
+			 <div class="col-sm-12">
+				 <input type="checkbox" onclick="myFunction()">Show Password 
+			 </div>
+			
+            <div class="col-sm-12">
+                <button class="btn btn--radius-2 btn--red" onclick="window.location.href = 'https://crunchbase.com/organization/sharedpro';">Register</button>
+            </div>
+        
+        </div>      
+      
+    </form> 
+    </div>
+    <div class="col-sm-4"></div>
+        </div>
+    <script> 
+        function register()                                    
+        { 
+            var name = document.forms["RegForm"]["Name"];               
+            var email = document.forms["RegForm"]["EMail"];    
+            var phone = document.forms["RegForm"]["Telephone"];  
+            var what =  document.forms["RegForm"]["Subject"];  
+            var password = document.forms["RegForm"]["Password"];  
+            var address = document.forms["RegForm"]["Address"];  
+           
+            if (name.value == "")                                  
+            { 
+                window.alert("Please enter your name."); 
+                name.focus(); 
+                return false; 
+            } 
+           
+            if (address.value == "")                               
+            { 
+                window.alert("Please enter your address."); 
+                address.focus(); 
+                return false; 
+            } 
+               
+            if (email.value == "")                                   
+            { 
+                window.alert("Please enter a valid e-mail address."); 
+                email.focus(); 
+                return false; 
+            } 
+           
+          
+        if (isNaN(phone)||phone.length!=10)                           
+            { 
+                window.alert("Please enter 10 telephone number."); 
+                phone.focus(); 
+       return false;
+            }
+        
+        if (password.value == "")                        
+        { 
+            window.alert("Please enter your password"); 
+            password.focus(); 
+            return false; 
+        } 
+       
+        return false; 
+        function myFunction() {
+      var x = document.getElementById("myInput");
+      if (x.type === "password") {
+        x.type = "text";
+      } else {
+        x.type = "password";
+      }
+    
+    }</script> 
+    
+</section>
+</body>
+</html>

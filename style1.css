@@ -1,0 +1,91 @@
+*
+{
+    padding:0;
+    margin:0;
+}
+.header
+{
+    height:100%;
+    background: url(Tour/registration.jpg) no-repeat;
+ background-size: cover;
+    background-position:center;
+    background-attachment:scroll;
+    padding-top:30px;
+    text-align:center;
+    color:#fff;
+}
+.register {                                         
+    margin-left: 70px; 
+    font-weight: bold ; 
+    float: left; 
+    clear: left; 
+    width: 150px; 
+    text-align: left; 
+    margin-right: 10px; 
+    font-family:sans-serif,bold, Arial, Helvetica; 
+    font-size:14px; 
+} 
+.div {  
+    box-sizing: border-box; 
+    width: 100%; 
+    border: 100px solid black; 
+    float: left; 
+    align-content: center; 
+    align-items: center; 
+} 
+   
+.form {                                         
+    margin: 0 auto; 
+    width: 600px; 
+}
+.li {list-style-type: none;
+font-size: 16pt;
+}
+.mail {
+margin: auto;
+padding-top: 10px;
+padding-bottom: 10px;
+width: 400px;
+background : #D8F1F8;
+border: 1px soild silver;
+}
+.mail h2 {
+margin-left: 38px;
+}
+.input {
+font-size: 20pt;
+}
+.input:focus, textarea:focus{
+background-color: lightyellow;
+}
+
+.rq {
+color: #FF0000;
+font-size: 10pt;
+}
+ .card-heading {
+    padding: 20px 0;
+    background: rgba(0,0,0,0.7);
+    -webkit-border-top-left-radius: 10px;
+    -moz-border-radius-topleft: 10px;
+    border-top-left-radius: 10px;
+    -webkit-border-top-right-radius: 10px;
+    -moz-border-radius-topright: 10px;
+    border-top-right-radius: 10px;
+}
+
+.feature-img
+{
+    background-size: cover;
+   height:42;
+   width:30;
+    background-attachment:fixed;
+    padding-top:00px;
+    text-align:right;  
+}
+.btn
+{
+    visibility: visible;
+    border: 100px solid black; 
+    color:red;
+}
